@@ -4,7 +4,7 @@ from config import hi
 
 application = Flask(__name__)
 
-@application.route("/")
+@application.before_request
 def hello():
     return hi
 
